@@ -32,9 +32,16 @@ export default function Mainbar(){
         }
     }, [isWeb3Enabled])
 
-    return(
+    return(<>
         <div>
-            MAIN BAR!
+            WELCOME HOME PAGE!
         </div>
-    )
+        <nav>
+            <section id="hero">
+                <div className="flex flex-col md:flex-row items-center px-0 mx-auto mt-10 space-y-0 md:space-y-0">
+                    SOME OTHER STUFF
+                </div> 
+            </section>
+        </nav>
+        </>)
 }
