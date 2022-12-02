@@ -17,6 +17,7 @@ export default function Artist() {
     
     <div className={my_styles.container}>
     <Sidebar/>
+    ARTIST(S)
     </div>
   )
 }

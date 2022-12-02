@@ -1,7 +1,10 @@
 import { abi, contractAddress } from "../constants";
+import Hephaestus from "../assets/Img/Hephaestus.png";
 import { useWeb3Contract, useMoralis } from "react-moralis";
+import { ConnectButton } from 'web3uikit';
 import { useEffect } from "react";
 import { ethers } from "ethers";
+import Image from 'next/image'
 
 
 export default function Mainbar(){
@@ -33,15 +36,32 @@ export default function Mainbar(){
     }, [isWeb3Enabled])
 
     return(<>
-        <div>
-            WELCOME HOME PAGE!
+    
+        <div className="static bg-bckblue mt-10 text-slate">
+            <div class="flow-root">  
+                <p class="flex float-right opacity-5 hidden md:flex object-cover"><Image height={970} width={410} src={Hephaestus}/></p>
+                <h2 class="text-3xl">Welcome to Hephaestus!</h2>
+                <h1 class="text-white ">Forging a new Blockchain Art Page! Where digital and physical arts exist...</h1>
+                <p class="mt-16">This dapp focus on combine the best of both worlds, web3/blockchain technologies with traditional selling sites. Buy one of our artists pieces to receive the "NFTs" and the "Physical Arts" work!</p>
+                <button class="mt-8 md:invisible"><ConnectButton /></button>
+                <p class="mt-16">More data or other info!</p>
+            </div>
+            <div className="mt-10">
+                <ul className="flex mt-20 ml-20 text-sm grid grid-cols-4 gap-1 content-center">
+                    <li>
+                        <a href='#' className='hover:text-white'>Twitter</a>
+                    </li>
+                    <li>
+                        <a href='#' className='hover:text-white'>Github</a>
+                    </li>
+                    <li>
+                        <a href='#' className='hover:text-white'>Opensea</a>
+                    </li>
+                    <li>
+                        <a href='#' className='hover:text-white'>Other</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <section id="hero">
-                <div className="flex flex-col md:flex-row items-center px-0 mx-auto mt-10 space-y-0 md:space-y-0">
-                    SOME OTHER STUFF
-                </div> 
-            </section>
-        </nav>
         </>)
 }

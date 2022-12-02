@@ -25,6 +25,8 @@ module.exports = {
         bermuda: '#78dcca',
         black: '#000000',
         slate: '#94a3b8',
+        regalblue: '#243c5a',
+        bckblue: '#22203f',
       },
   },
   plugins: [],

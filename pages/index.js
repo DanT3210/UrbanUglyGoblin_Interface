@@ -18,8 +18,8 @@ export default function Home() {
     <Header/>
     <div className={my_styles.container}>
       <Head>
-        <title>Goblin Web</title>
-        <meta name="description" content="Goblins against communism" />
+        <title>Hephaestus dapp</title>
+        <meta name="description" content="NFTs, digital art, physical arts and more" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Mainbar/>
