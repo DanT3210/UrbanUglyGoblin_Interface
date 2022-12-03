@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 import { useState } from 'react';
 //import Sidebar from '../components/Sidebar';
-import Mainbar from '../components/Minbar';
+import Mainbar from '../components/Mainbar';
 import Header from '../components/Header';
 
 const my_styles = {

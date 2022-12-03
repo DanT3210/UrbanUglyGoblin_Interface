@@ -30,7 +30,6 @@ export default function Mainbar(){
     
     useEffect(() => {
         if (isWeb3Enabled) {
-            <div></div>
             updateUIValues()
         }
     }, [isWeb3Enabled])
@@ -38,13 +37,13 @@ export default function Mainbar(){
     return(<>
     
         <div className="static bg-bckblue mt-10 text-slate">
-            <div class="flow-root">  
-                <p class="flex float-right opacity-5 hidden md:flex object-cover"><Image height={970} width={410} src={Hephaestus}/></p>
-                <h2 class="text-3xl">Welcome to Hephaestus!</h2>
-                <h1 class="text-white ">Forging a new Blockchain Art Page! Where digital and physical arts exist...</h1>
-                <p class="mt-16">This dapp focus on combine the best of both worlds, web3/blockchain technologies with traditional selling sites. Buy one of our artists pieces to receive the "NFTs" and the "Physical Arts" work!</p>
-                <button class="mt-8 md:invisible"><ConnectButton /></button>
-                <p class="mt-16">More data or other info!</p>
+            <div className="flow-root">  
+                <p className="flex float-right opacity-5 hidden md:flex object-cover"><Image height={970} width={410} src={Hephaestus}/></p>
+                <h2 className="text-3xl">Welcome to Hephaestus!</h2>
+                <h1 className="text-white ">Forging a new Blockchain Art Page! Where digital and physical arts exist...</h1>
+                <p className="mt-16">This dapp focus on combine the best of both worlds, web3/blockchain technologies with traditional selling sites. Buy one of our artists pieces to receive the "NFTs" and the "Physical Arts" work!</p>
+                <button className="mt-8 md:invisible"><ConnectButton /></button>
+                <p className="mt-16">More data or other info!</p>
             </div>
             <div className="mt-10">
                 <ul className="flex mt-20 ml-20 text-sm grid grid-cols-4 gap-1 content-center">
