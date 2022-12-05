@@ -16,6 +16,7 @@ export default function Home() {
   const {enableWeb3, isWeb3Enable}=useMoralis();
   return (<>
     <Header/>
+    
     <div className={my_styles.container}>
       <Head>
         <title>Hephaestus dapp</title>
@@ -23,6 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Mainbar/>
-    </div></>
-  )
+    </div>
+    
+    </>)
 }

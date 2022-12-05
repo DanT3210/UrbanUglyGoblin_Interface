@@ -3,31 +3,49 @@ import { useMoralis, useWeb3Contract } from 'react-moralis';
 import styles from '../styles/Home.module.css'
 import logo from '../assets/amazon_logo.png'
 import { AiOutlineHistory,AiFillHome } from 'react-icons/ai';
+import { BsTwitter,BsFacebook, BsInstagram, BsGithub,BsDribbble } from 'react-icons/bs';
 import Image from 'next/image'
 import Link from 'next/link';
 
-const my_style={
-    container:`p-1 w-full shadow-lg `,
-    linksContainer:`hidden md:flex space-x-6 text-sm text-slate mx-20 `,
-    amazonLogo: `mr-4 flex object-cover`,
-    myButton: `hidden md:block lg:pl-[960px] pl-[80px]`,
-}
+import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle } from "flowbite-react";
+
 export default function Header(){
     const { enableWeb3, isWeb3Enabled } = useMoralis();
+    const styles = {
+      menu: `m-1 hover:bg-neutral-200`,
+    }
     return(<>
-    
-        <nav className={my_style.container}>
-            <div className="hidden md:flex items-center justify between">
-                <div className={my_style.linksContainer}>
-                    <a href='#' className='hover:text-white'>Explore</a>
-                    <a href='#' className='hover:text-white'>Resources</a>
-                    <a href='#' className='hover:text-white'>Protocole</a>
-                </div>
-                <div className={my_style.myButton}>
-                    <ConnectButton />
-                </div>
-            </div>
-    
-            
-        </nav></>)
+    <Navbar fluid={true} rounded={true}>
+      <Navbar.Brand href="https://flowbite.com/">
+        <img
+          src="https://flowbite.com/docs/images/logo.svg"
+          className="mr-3 h-6 sm:h-9"
+          alt="Flowbite Logo"
+        />
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          ARTem
+        </span>
+      </Navbar.Brand>
+      <div className="flex md:order-2">
+        <ConnectButton/>
+        <Flowbite>
+          <DarkThemeToggle />
+        </Flowbite>
+      </div>
+      <Navbar.Collapse>
+        <Navbar.Link  href="/#">Home</Navbar.Link>
+        <div>
+          <Dropdown label="Artist" inline={true}>
+            <Dropdown.Item onClick={onClick} className={styles.menu}>Carlos Games</Dropdown.Item>
+            <Dropdown.Item onClick={onClick} className={styles.menu}>Javier Nunez</Dropdown.Item>
+            <Dropdown.Item onClick={onClick} className={styles.menu}>Cosme Proenza</Dropdown.Item>
+          </Dropdown>
+        </div>
+        <Navbar.Link href="/">Transaction History</Navbar.Link>
+        <Navbar.Link href="/">Contract</Navbar.Link>
+        <Navbar.Link href="/">Contact</Navbar.Link>
+
+      </Navbar.Collapse>
+    </Navbar>   
+    </>)
 }
