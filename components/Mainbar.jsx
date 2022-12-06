@@ -9,6 +9,7 @@ import Image from 'next/image'
 import { AiFillHome, AiFillFacebook } from 'react-icons/ai';
 import {GoMarkGithub} from 'react-icons/go';
 import { BsTwitter,BsFacebook, BsClockHistory, BsFillEnvelopeOpenFill } from 'react-icons/bs';
+import { DarkThemeToggle } from "flowbite-react";
 
 
 export default function Mainbar(){
@@ -39,12 +40,12 @@ export default function Mainbar(){
     }, [isWeb3Enabled])
 
     return(<>
-    <div className="bg-bckblue mt-5 text-slate">
+    <div className="bg-white mt-5 text-slate dark:bg-bckblue">
          <h2 className="text-6xl font-black">Welcome to ARTem!</h2>
          <h1 className="text-white text-3xl font-thin">Forging a new Blockchain Art Page! Where digital and physical arts exist...</h1>
         <div className="static bg-bckblue mt-10 text-slate rounded-xl bg-fixed bg-cover xl:bg-[url('../assets/Img/Wave2.jpg')] ms:bg-none">
             <div className="flow-root"> 
-                <p className="float-right opacity-10 hidden mt-10 md:flex object-cover"><Image height={970} width={410} src={Hephaestus}/></p>
+                <p className="float-right opacity-5 hidden mt-10 md:flex object-cover"><Image height={970} width={410} src={Hephaestus}/></p>
                 <h2 className="text-6xl"></h2>
                 <h1 className="text-white text-3xl"></h1>
                 <p className="mt-16"></p>

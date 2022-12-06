@@ -12,10 +12,11 @@ import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle } from "flowbit
 export default function Header(){
     const { enableWeb3, isWeb3Enabled } = useMoralis();
     const styles = {
-      menu: `m-1 hover:bg-neutral-200`,
+      menu: `m-1 hover:bg-neutral-200 dark:bg-blue`,
     }
+    
     return(<>
-    <Navbar fluid={true} rounded={true}>
+    <Navbar fluid={true} rounded={true} className="bg-white dark:bg-bckblue">
       <Navbar.Brand href="https://flowbite.com/">
         <img
           src="https://flowbite.com/docs/images/logo.svg"
@@ -27,12 +28,13 @@ export default function Header(){
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
+      <Flowbite>
+          <DarkThemeToggle className='bg-silver'/>
+        </Flowbite>        
         <ConnectButton/>
-        <Flowbite>
-          <DarkThemeToggle />
-        </Flowbite>
+
       </div>
-      <Navbar.Collapse>
+      <Navbar.Collapse className="text-black dark:text-white">
         <Navbar.Link  href="/#">Home</Navbar.Link>
         <div>
           <Dropdown label="Artist" inline={true}>
