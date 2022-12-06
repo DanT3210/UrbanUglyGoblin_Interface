@@ -4,7 +4,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,html}",
     "./components/**/*.{js,ts,jsx,tsx,html}",
-    "./node_modules/flowbite/**/*.js",
+    "./node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {

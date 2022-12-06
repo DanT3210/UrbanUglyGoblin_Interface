@@ -28,7 +28,7 @@ export default function Header(){
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-      <Flowbite>
+        <Flowbite>
           <DarkThemeToggle className='bg-silver'/>
         </Flowbite>        
         <ConnectButton/>
