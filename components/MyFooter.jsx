@@ -3,7 +3,6 @@ import { AiOutlineHistory,AiFillHome } from 'react-icons/ai';
 import { BsTwitter,BsFacebook, BsInstagram, BsGithub,BsDribbble } from 'react-icons/bs';
 import Image from 'next/image'
 import Link from 'next/link';
-
 import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle, Footer } from "flowbite-react";
 
 export default function MyFooter(){

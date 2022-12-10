@@ -30,7 +30,7 @@ export default function Header(){
         <Navbar.Collapse  className="dark:text-slate">
             <Navbar.Link href="/">Home</Navbar.Link>
             <div>
-                <Dropdown label="Artist" inline={true} className="dark:bg-blue-900">
+                <Dropdown label="Artist" inline={true} className="hover:text-red dark:bg-blue-900">
                     <Dropdown.Item onClick={onClick} className={mystyles.menu}>Carlos Games</Dropdown.Item>
                     <Dropdown.Item onClick={onClick} className={mystyles.menu}>Javier Nunez</Dropdown.Item>
                     <Dropdown.Item onClick={onClick} className={mystyles.menu}>Cosme Proenza</Dropdown.Item>

@@ -7,21 +7,25 @@ import { DarkThemeToggle } from "flowbite-react";
 //import Sidebar from '../components/Sidebar';
 import MyFooter from '../components/MyFooter';
 import Header from '../components/Header';
+import Welcome from '../components/Welcome';
 
 export default function Home() {
   const [accounts, setAccounts]=useState([]); 
   const {enableWeb3, isWeb3Enable}=useMoralis();
+  //document.body.style = 'background:black;';
   return (<>
     <Header/>
     
-    <div className="dark:bg-bckblue">
+    <div className="dark:bg-bckblue dark:h-90v">
       <Head>
         <title>ARTem dapp</title>
         <meta name="description" content="NFTs, digital art, physical arts and more" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      HERE TEXT
+       
+      <Welcome/>    
     </div>
+    
     <MyFooter/>
     </>)
 }
