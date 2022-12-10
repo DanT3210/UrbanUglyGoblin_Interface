@@ -14,9 +14,9 @@ export default function MyFooter(){
             <div className="w-full sm:flex sm:items-center sm:justify-between ">
                 <Footer.Copyright href="#" by="ARTEM" year={2022}/>
                     <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-                        <Footer.Icon href="#" icon={BsFacebook}/>
-                        <Footer.Icon href="#" icon={BsTwitter}/>
-                        <Footer.Icon href="#" icon={BsGithub}/>
+                        <Footer.Icon href="www.facebook.com" icon={BsFacebook}/>
+                        <Footer.Icon href="www.twitter.com" icon={BsTwitter}/>
+                        <Footer.Icon href="#https://github.com/DanT3210" icon={BsGithub}/>
                     </div>
             </div>
         </div>
