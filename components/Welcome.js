@@ -9,11 +9,16 @@ export default function Welcome(){
 
     
     return(<>
-            <div className="dark:text-slate">
-                <div className="mx-10 bg-black">
-                    <p className='pt-10'>WELCOM</p>
+    <div class="flex justify-center items-center h-50v">
+            <div className="mb-8 text-blue-700 top-32 dark:text-slate">
+                <div className="mx-20 pt-8">
+                    <p className="text-6xl">WELCOM TO ARTEM!</p>
+                    <p className="text-xl">Where NFTs & Physical Art converge...</p>
+                    <div class="visible lg:hidden justify-center items-center pt-8 pb-4"><ConnectButton/></div>
                 </div>
-            
+                
             </div>
+    </div>
+
     </>)
 }

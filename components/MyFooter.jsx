@@ -13,10 +13,14 @@ export default function MyFooter(){
           
             <div className="w-full sm:flex sm:items-center sm:justify-between ">
                 <Footer.Copyright href="#" by="ARTEM" year={2022}/>
-                    <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-                        <Footer.Icon href="www.facebook.com" icon={BsFacebook}/>
-                        <Footer.Icon href="www.twitter.com" icon={BsTwitter}/>
-                        <Footer.Icon href="#https://github.com/DanT3210" icon={BsGithub}/>
+                    <div className="mt-4 mr-10 flex space-x-6 sm:mt-0 sm:justify-center">
+                        
+                        <Link href="https://facebook.com" target="_blank"><BsFacebook className="w-7 h-7"/></Link>
+                        
+                        <Link href="https://twitter.com" target="_blank"><BsTwitter className="w-7 h-7"/></Link>
+                        
+                        <Link href="https://github.com/DanT3210" target="_blank"><BsGithub className="w-7 h-7"/></Link>
+                        
                     </div>
             </div>
         </div>
