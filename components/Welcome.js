@@ -9,12 +9,13 @@ export default function Welcome(){
 
     
     return(<>
-    <div class="flex justify-center items-center h-50v">
-            <div className="mb-8 text-blue-700 top-32 dark:text-slate">
-                <div className="mx-20 pt-8">
-                    <p className="text-6xl">WELCOM TO ARTEM!</p>
-                    <p className="text-xl">Where NFTs & Physical Art converge...</p>
-                    <div class="visible lg:hidden justify-center items-center pt-8 pb-4"><ConnectButton/></div>
+    <div class="h-50v lg:flex justify-center items-center">
+            <div className="top-40 border-solid border-2 border-zinc-900 rounded-md dark:text-slate dark:border-slate">
+                <div className="mx-20 pt-4 pb-4">
+                    <p className="text-6xl font-thin">WELCOM TO <b>ARTEM!</b></p>
+                    <p className="text-2xl font-black">Where NFTs & Physical Art converge...</p>
+                    <p className="pt-10">Connect, Search, and Collect your favorit Artist's Art (Digital+Physical) in a decentralized trading protocol.</p>
+                    <div class="visible flex justify-center items-center mr-0 pt-8 pb-4 lg:hidden "><ConnectButton/></div>
                 </div>
                 
             </div>
