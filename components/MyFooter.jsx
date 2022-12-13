@@ -8,7 +8,7 @@ import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle, Footer } from 
 export default function MyFooter(){
     
     return(<>
-    <Footer container={true} className="absolute inset-x-0 bottom-0 dark:bg-bckblue dark:rounded-none border-t-4 border-t-indigo-500 dark:border-t-black">
+    <Footer container={true} className="relative inset-x-0 bottom-0 dark:bg-bckblue dark:rounded-none border-t-4 border-t-indigo-500 dark:border-t-black">
         <div className="w-full  dark:text-slate">
           
             <div className="w-full sm:flex sm:items-center sm:justify-between ">

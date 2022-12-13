@@ -15,7 +15,7 @@ export default function Header(){
       }
     
     return(<>
-        <Navbar fluid={true} rounded={true} className="border-b-4 border-b-indigo-500 bg-white dark:bg-bckblue dark:border-b-black">
+        <Navbar fluid={true} rounded={true} className="relative border-b-4 border-b-indigo-500 bg-white dark:bg-bckblue dark:border-b-black">
         <Navbar.Brand href="/">
             <span className="self-center whitespace-nowrap text-xl font-semibold text-bckblue dark:text-slate">
             ARTEM
@@ -23,19 +23,16 @@ export default function Header(){
         </Navbar.Brand>
         <div className="flex md:order-2">
             <Flowbite>
-                <DarkThemeToggle className='bg-silver'/>
+                <DarkThemeToggle className="dark:text-slate"/>
             </Flowbite>     
+            <div className="md:hidden dark:text-slate">
+                <Navbar.Toggle />
+            </div>
             <div className="hidden lg:block"><ConnectButton/></div>
         </div>
         <Navbar.Collapse  className="text-bckblue dark:text-slate">
-            <Navbar.Link active={true} href="/">Home</Navbar.Link>
-            <div>
-                <Dropdown label="Artist" inline={true} className="hover:text-red dark:bg-blue-900">
-                    <Dropdown.Item onClick={onClick} className={mystyles.menu}>Carlos Games</Dropdown.Item>
-                    <Dropdown.Item onClick={onClick} className={mystyles.menu}>Javier Nunez</Dropdown.Item>
-                    <Dropdown.Item onClick={onClick} className={mystyles.menu}>Cosme Proenza</Dropdown.Item>
-                </Dropdown>
-            </div>
+            <Navbar.Link active={false} href="/">Home</Navbar.Link>
+ 
             <Navbar.Link href="https://github.com/DanT3210/UrbanUglyGoblin_Interface" target={"_blank"}>Protocol</Navbar.Link>
             <Navbar.Link href="/#">Contact</Navbar.Link>
             <Navbar.Link href="https://polygonscan.com/address/0xaf962d5adb264e3bb7397e378dd775a5645e7606" target={"_blank"}>Transaction History</Navbar.Link>
