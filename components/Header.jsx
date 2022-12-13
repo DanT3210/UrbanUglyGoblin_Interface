@@ -16,16 +16,16 @@ export default function Header(){
     
     return(<>
         <Navbar fluid={true} rounded={true} className="relative border-b-4 border-b-indigo-500 bg-white dark:bg-bckblue dark:border-b-black">
-        <Navbar.Brand href="/">
-            <span className="self-center whitespace-nowrap text-xl font-semibold text-bckblue dark:text-slate">
+        
+            <span className="self-center whitespace-nowrap text-xl font-semibold text-bckblue pointer-events-none dark:text-slate">
             ARTEM
             </span>
-        </Navbar.Brand>
+        
         <div className="flex md:order-2">
             <Flowbite>
-                <DarkThemeToggle className="dark:text-slate"/>
+                <DarkThemeToggle className="hover:text-blue-700 dark:text-slate dark:hover:text-white"/>
             </Flowbite>     
-            <div className="md:hidden dark:text-slate">
+            <div className="md:hidden hover:text-blue-700 dark:text-slate dark:hover:text-white">
                 <Navbar.Toggle />
             </div>
             <div className="hidden lg:block"><ConnectButton/></div>
