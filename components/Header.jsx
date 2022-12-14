@@ -1,5 +1,6 @@
 import {ConnectButton} from 'web3uikit';
 import { useMoralis, useWeb3Contract } from 'react-moralis';
+import { useState, useEffect } from "react";
 import styles from '../styles/Home.module.css'
 import { AiOutlineHistory,AiFillHome } from 'react-icons/ai';
 import { BsTwitter,BsFacebook, BsInstagram, BsGithub,BsDribbble } from 'react-icons/bs';
@@ -10,6 +11,8 @@ import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle,Footer} from "f
 
 export default function Header(){
     const { enableWeb3, isWeb3Enabled } = useMoralis();
+    const [hasMetamask, setHasMetamask] = useState(false);
+
     const mystyles = {
         menu: "hover:bg-neutral-200 dark:hover:bg-bckblue",
       }
@@ -34,8 +37,10 @@ export default function Header(){
                 <Navbar.Link active={false} href="/">Home</Navbar.Link>
                 <Navbar.Link href="https://github.com/DanT3210/UrbanUglyGoblin_Interface" target={"_blank"}>Protocol</Navbar.Link>
                 <Navbar.Link href="/#">Contact</Navbar.Link>
-                <Navbar.Link href="https://polygonscan.com/address/0xaf962d5adb264e3bb7397e378dd775a5645e7606" target={"_blank"}>Transaction History</Navbar.Link>
+                {isWeb3Enabled ? (
+                  <Navbar.Link href="https://polygonscan.com/address/0xaf962d5adb264e3bb7397e378dd775a5645e7606" target={"_blank"}>Transaction History</Navbar.Link>
+                ) : ("")}
             </Navbar.Collapse>
-        </Navbar>   
+        </Navbar>           
     </>)
 }
