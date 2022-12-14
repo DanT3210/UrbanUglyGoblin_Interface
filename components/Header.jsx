@@ -6,7 +6,7 @@ import { BsTwitter,BsFacebook, BsInstagram, BsGithub,BsDribbble } from 'react-ic
 import Image from 'next/image'
 import Link from 'next/link';
 
-import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle } from "flowbite-react";
+import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle,Footer} from "flowbite-react";
 
 export default function Header(){
     const { enableWeb3, isWeb3Enabled } = useMoralis();
@@ -15,28 +15,27 @@ export default function Header(){
       }
     
     return(<>
-        <Navbar fluid={true} rounded={true} className="relative border-b-4 border-b-indigo-500 bg-white dark:bg-bckblue dark:border-b-black">
-        
-            <span className="self-center whitespace-nowrap text-xl font-semibold text-bckblue pointer-events-none dark:text-slate">
-            ARTEM
-            </span>
-        
-        <div className="flex md:order-2">
-            <Flowbite>
-                <DarkThemeToggle className="hover:text-blue-700 dark:text-slate dark:hover:text-white"/>
-            </Flowbite>     
+    
+        <Navbar fluid={true} rounded={false} className="relative dark:bg-bckblue">
             <div className="md:hidden hover:text-blue-700 dark:text-slate dark:hover:text-white">
                 <Navbar.Toggle />
             </div>
-            <div className="hidden lg:block"><ConnectButton/></div>
-        </div>
-        <Navbar.Collapse  className="text-bckblue dark:text-slate">
-            <Navbar.Link active={false} href="/">Home</Navbar.Link>
- 
-            <Navbar.Link href="https://github.com/DanT3210/UrbanUglyGoblin_Interface" target={"_blank"}>Protocol</Navbar.Link>
-            <Navbar.Link href="/#">Contact</Navbar.Link>
-            <Navbar.Link href="https://polygonscan.com/address/0xaf962d5adb264e3bb7397e378dd775a5645e7606" target={"_blank"}>Transaction History</Navbar.Link>
-        </Navbar.Collapse>
-        </Navbar>
+            <span className="self-center whitespace-nowrap text-xl font-semibold text-bckblue pointer-events-none dark:text-slate">
+                ARTEM
+            </span>
+        
+            <div className="flex md:order-2">
+                <Flowbite>
+                    <DarkThemeToggle className="hover:text-blue-700 dark:text-slate dark:hover:text-white"/>
+                </Flowbite>     
+                <div className="hidden lg:block"><ConnectButton/></div>
+            </div>
+            <Navbar.Collapse  className="text-bckblue dark:text-slate">
+                <Navbar.Link active={false} href="/">Home</Navbar.Link>
+                <Navbar.Link href="https://github.com/DanT3210/UrbanUglyGoblin_Interface" target={"_blank"}>Protocol</Navbar.Link>
+                <Navbar.Link href="/#">Contact</Navbar.Link>
+                <Navbar.Link href="https://polygonscan.com/address/0xaf962d5adb264e3bb7397e378dd775a5645e7606" target={"_blank"}>Transaction History</Navbar.Link>
+            </Navbar.Collapse>
+        </Navbar>   
     </>)
 }
