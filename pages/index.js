@@ -16,7 +16,7 @@ export default function Home() {
   return (<>
     <Header/>
     
-    <div className="h-90v md:bg-[url('../assets/bkg/BGK_1.png')] dark:bg-[url('../assets/bkg/BGK_2.png')]">
+    <div className="h-90v md:bg-[url('../assets/bkg/BGK_1.png')] dark:bg-neutral-700 md:dark:bg-[url('../assets/bkg/BGK_2.png')]">
       <Head>
         <title>ARTem dapp</title>
         <meta name="description" content="NFTs, digital art, physical arts and more" />
