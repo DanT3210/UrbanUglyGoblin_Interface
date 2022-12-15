@@ -1,7 +1,7 @@
 import {ConnectButton} from 'web3uikit';
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 import styles from '../styles/Home.module.css'
-import { DarkThemeToggle,Dropdown } from "flowbite-react";
+import { DarkThemeToggle,Dropdown,Button } from "flowbite-react";
 import Image from 'next/image'
 import Link from 'next/link';
 
@@ -22,20 +22,25 @@ export default function Welcome(){
                         <p className="pt-10">Connect, Search, and Collect your favorit Artist's Art (Digital+Physical) in a decentralized trading protocol.</p>
                         <div className="visible flex justify-center items-center mr-0 pt-8 pb-4 lg:hidden "><ConnectButton/></div>
                     </div>
-                    <div className="flex flex-wrap gap-2 pt-2 pb-2 mx-20">
-                        <Dropdown label="Artist's List" dismissOnClick={false} className="dark:bg-blue-900">
-                            <Dropdown.Item className={mystyles.menu}>Carlos Gamez</Dropdown.Item>
-                            <Dropdown.Item className={mystyles.menu}>Javier Antunez</Dropdown.Item>
-                            <Dropdown.Item className={mystyles.menu}>Cosme Proenza</Dropdown.Item>
-                            <Dropdown.Item className={mystyles.menu}>Others</Dropdown.Item>
-                        </Dropdown>
-                        <Dropdown label="Collection's List" dismissOnClick={false} className="dark:bg-blue-900">
-                            <Dropdown.Item className={mystyles.menu}>Butterflies in the stomach</Dropdown.Item>
-                            <Dropdown.Item className={mystyles.menu}>Dark Arts</Dropdown.Item>
-                            <Dropdown.Item className={mystyles.menu}>Greek Gods</Dropdown.Item>
-                            <Dropdown.Item className={mystyles.menu}>Others</Dropdown.Item>
-                        </Dropdown>
-                    </div>
+                    
+                    {isWeb3Enabled ? (
+                        <div className="flex flex-wrap gap-2 pt-2 pb-2 mx-20">
+                            <Dropdown label="Artist's List" color="red" dismissOnClick={false} className="dark:bg-blue-900">
+                                <Dropdown.Item className={mystyles.menu}>Carlos Gamez</Dropdown.Item>
+                                <Dropdown.Item className={mystyles.menu}>Javier Antunez</Dropdown.Item>
+                                <Dropdown.Item className={mystyles.menu}>Cosme Proenza</Dropdown.Item>
+                                <Dropdown.Item className={mystyles.menu}>Others</Dropdown.Item>
+                            </Dropdown>
+                            <Dropdown label="Collection's List" color="red" dismissOnClick={false} className="dark:bg-blue-900">
+                                <Dropdown.Item className={mystyles.menu}>Butterflies in the stomach</Dropdown.Item>
+                                <Dropdown.Item className={mystyles.menu}>Dark Arts</Dropdown.Item>
+                                <Dropdown.Item className={mystyles.menu}>Greek Gods</Dropdown.Item>
+                                <Dropdown.Item className={mystyles.menu}>Others</Dropdown.Item>
+                            </Dropdown>
+                        </div>
+                    ) : ("")}
+                        
+                    
                 </div>
             </div> 
     </>)

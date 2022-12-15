@@ -1,6 +1,5 @@
 import {ConnectButton} from 'web3uikit';
 import { useMoralis, useWeb3Contract } from 'react-moralis';
-import { useState, useEffect } from "react";
 import styles from '../styles/Home.module.css'
 import { AiOutlineHistory,AiFillHome } from 'react-icons/ai';
 import { BsTwitter,BsFacebook, BsInstagram, BsGithub,BsDribbble } from 'react-icons/bs';
@@ -11,7 +10,7 @@ import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle,Footer} from "f
 
 export default function Header(){
     const { enableWeb3, isWeb3Enabled } = useMoralis();
-    const [hasMetamask, setHasMetamask] = useState(false);
+
 
     const mystyles = {
         menu: "hover:bg-neutral-200 dark:hover:bg-bckblue",
