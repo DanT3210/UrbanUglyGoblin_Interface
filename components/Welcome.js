@@ -33,13 +33,24 @@ export default function Welcome(){
         params: {},
     });
 
+    const { runContractFunction: updateArtPrice } = useWeb3Contract({
+        abi: abi,
+        contractAddress: proxyContAddress, // specify the networkId
+        functionName: "updateArtPrice",
+        params: {
+            _newPrice:500,
+        },
+    });    
+
     
     async function updateUIValues() {
 
         const artPrice = (await getArtPrice()).toString();
         const collectionName= (await getName());
+        const setNewPrice=(await updateArtPrice());
         console.log(`ArtPrice is ${artPrice}`);
         console.log(`Collection Name is ${collectionName}`);
+        console.log(`New Price is ${setNewPrice.toString()}`);
     }
 
     useEffect(() => {
