@@ -47,10 +47,10 @@ export default function Welcome(){
 
         const artPrice = (await getArtPrice()).toString();
         const collectionName= (await getName());
-        const setNewPrice=(await updateArtPrice());
+        //const setNewPrice=(await updateArtPrice());
         console.log(`ArtPrice is ${artPrice}`);
         console.log(`Collection Name is ${collectionName}`);
-        console.log(`New Price is ${setNewPrice.toString()}`);
+        //console.log(`New Price is ${setNewPrice.toString()}`);
     }
 
     useEffect(() => {
