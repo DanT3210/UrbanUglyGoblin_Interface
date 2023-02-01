@@ -5,8 +5,4 @@ const nextConfig = {
 }
 
 //module.exports = nextConfig
-module.exports = {
-  images: {
-    unoptimized: true,
-  },
-}
+module.exports = { nextConfig, images: {loader: "custom"}}
