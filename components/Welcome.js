@@ -55,7 +55,7 @@ export default function Welcome(){
 
     useEffect(() => {
         if (isWeb3Enabled) {
-            updateUIValues();
+            //updateUIValues();
         }
     }, [isWeb3Enabled]);
 
@@ -71,7 +71,7 @@ export default function Welcome(){
                     <div className="mx-20 pt-4 pb-4">
                         <p className="text-6xl font-thin">WELCOM TO <b>ARTEM!</b></p>
                         <p className="text-2xl font-black">Where NFTs & Physical Art converge...</p>
-                        <p className="pt-10">Connect, Search, and Collect your favorit Artist's Art (Digital+Physical) in a decentralized trading protocol.</p>
+                        <p className="pt-10">Connect, Search, and Collect your favorit Artists Art (Digital+Physical) in a decentralized trading protocol.</p>
                         <div className="visible flex justify-center items-center mr-0 pt-8 pb-4 lg:hidden "><ConnectButton/></div>
                     </div>
                     

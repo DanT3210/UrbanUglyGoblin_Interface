@@ -34,7 +34,7 @@ export default function Content(){
     
     useEffect(() => {
         if (isWeb3Enabled) {
-            updateUIValues()
+           // updateUIValues()
         }
     }, [isWeb3Enabled])
 
