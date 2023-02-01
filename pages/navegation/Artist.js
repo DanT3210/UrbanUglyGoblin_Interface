@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 import { useState } from 'react';
-import Sidebar from '../../components/Sidebar';
+//import Sidebar from '../../components/Sidebar';
 //import Header from '../../components/Header';
 
 
@@ -16,7 +16,6 @@ export default function Artist() {
   return (
     
     <div className={my_styles.container}>
-    <Sidebar/>
     ARTIST(S)
     </div>
   )

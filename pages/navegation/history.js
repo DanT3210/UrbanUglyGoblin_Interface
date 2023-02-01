@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 import { useState } from 'react';
-import Sidebar from '../../components/Sidebar';
+//import Sidebar from '../../components/Sidebar';
 //import Header from '../../components/Header';
 
 
@@ -15,8 +15,6 @@ export default function History() {
   const {enableWeb3, isWeb3Enable}=useMoralis();
   return (
     <div className={my_styles.container}>
-    
-    <Sidebar/>
     <h1>Welcome to you History!</h1>
     </div>
   )
