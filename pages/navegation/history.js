@@ -2,8 +2,8 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 import { useState } from 'react';
-//import Sidebar from '../../components/Sidebar';
-//import Header from '../../components/Header';
+import Header from '../components/Header';
+import MyFooter from '../components/MyFooter';
 
 
 const my_styles = {
@@ -13,9 +13,11 @@ const my_styles = {
 export default function History() {
   const [accounts, setAccounts]=useState([]); 
   const {enableWeb3, isWeb3Enable}=useMoralis();
-  return (
+  return (<>
+    <Header/>
     <div className={my_styles.container}>
+      
     <h1>Welcome to you History!</h1>
     </div>
-  )
+    </>)
 }

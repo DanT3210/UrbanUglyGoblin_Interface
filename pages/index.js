@@ -5,9 +5,10 @@ import { useMoralis, useWeb3Contract } from 'react-moralis';
 import { useState } from 'react';
 import { DarkThemeToggle } from "flowbite-react";
 //import Sidebar from '../components/Sidebar';
-import MyFooter from '../components/MyFooter';
+//import MyFooter from '../components/MyFooter';
 import Header from '../components/Header';
-import Welcome from '../components/Welcome';
+import Welcome from './navegation/Welcome';
+import MyFooter from '../components/MyFooter';
 
 export default function Home() {
   const [accounts, setAccounts]=useState([]); 
@@ -18,7 +19,7 @@ export default function Home() {
     
     <div className="h-90v md:bg-[url('../assets/bkg/BGK_1.png')] dark:bg-neutral-700 md:dark:bg-[url('../assets/bkg/BGK_2.png')]">
       <Head>
-        <title>ARTem dapp</title>
+        <title>SalesUp dapp</title>
         <meta name="description" content="NFTs, digital art, physical arts and more" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
