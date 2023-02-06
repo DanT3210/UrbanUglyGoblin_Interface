@@ -37,6 +37,7 @@ export default function Header(){
                 <Navbar.Link active={false} href="/">Home</Navbar.Link>
                 <Navbar.Link active={false} href="/navegation/Store">Item Store</Navbar.Link>
                 <Navbar.Link href="https://github.com/DanT3210/UrbanUglyGoblin_Interface" target={"_blank"}>Protocol</Navbar.Link>
+                <Navbar.Link active={false} href="/navegation/history">History</Navbar.Link>
                 <Navbar.Link href="/#">Contact</Navbar.Link>
                 {isWeb3Enabled ? (
                   <Navbar.Link href="https://polygonscan.com/address/0xaf962d5adb264e3bb7397e378dd775a5645e7606" target={"_blank"}>Transaction History</Navbar.Link>
