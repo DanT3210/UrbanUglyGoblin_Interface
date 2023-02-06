@@ -74,32 +74,6 @@ export default function Welcome(){
                         <p className="pt-10">Connect, Search, and Buy your favorit Item (Digital+Physical) in a decentralized trading protocol.</p>
                         <div className="visible flex justify-center items-center mr-0 pt-8 pb-4 lg:hidden "><ConnectButton/></div>
                     </div>
-                    
-                    {isWeb3Enabled ? (
-                        <div className="flex flex-wrap gap-2 pt-2 pb-2 mx-20">
-                            <Dropdown label="Items List" color="red" dismissOnClick={false} className="dark:bg-blue-900">
-                                <Dropdown.Item className={mystyles.menu}>Art</Dropdown.Item>
-                                <Dropdown.Item className={mystyles.menu}>Sneakers</Dropdown.Item>
-                                <Dropdown.Item className={mystyles.menu}>Jersey</Dropdown.Item>
-                            </Dropdown>
-                            <form className="flex items-center">   
-                                <label htmlFor="simple-search" className="sr-only">Search</label>
-                                <div className="relative w-full">
-                                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                        <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-bckblue" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path>
-                                        </svg>
-                                    </div>
-                                    <input type="text" id="simple-search" className="bg-blue-100 border border-zinc-300 text-black text-sm rounded-lg  pl-10 p-2.5 focus:ring-bckblue dark:bg-zinc-200 dark:border-zinc-600 dark:placeholder-zinc-600 dark:focus:ring-slate" placeholder="Search: Artis, Collections" required/>
-                                </div>
-                                <button type="submit" className="p-2.5 ml-2 text-sm font-medium text-blue-200 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-bckblue dark:bg-zinc-500 dark:hover:bg-stone-800 dark:focus:ring-slate">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                    </svg>
-                                </button>
-                            </form>
-                        </div>
-                    ) : ("")}   
                 </div>
             </div> 
     </>)
