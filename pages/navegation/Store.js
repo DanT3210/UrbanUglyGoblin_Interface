@@ -13,6 +13,7 @@ const my_styles = {
 export default function Store() {
   const [accounts, setAccounts]=useState([]); 
   const {enableWeb3, isWeb3Enable}=useMoralis();
+  
   return (<>
 
     <div className="h-90v md:flex justify-center items-center">
