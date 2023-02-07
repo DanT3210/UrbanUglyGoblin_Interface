@@ -8,7 +8,7 @@ import { Dropdown,Navbar,Button,onClick,Flowbite,DarkThemeToggle, Footer } from 
 export default function MyFooter(){
     
     return(<>
-    <div className="relative h-9 inset-x-0 bottom-0 dark:bg-bckblue dark:text-slate">               
+    <div className="relative h-9 inset-x-0 bottom-0 border-t  dark:border-cyan-700 dark:bg-bckblue dark:text-slate">               
                     <div className="pt-2 mr-10 flex space-x-6 sm:mt-0 sm:justify-center">
                         <Link href="https://facebook.com" target="_blank"><BsFacebook className="w-5 h-5 hover:text-blue-700 dark:hover:text-white"/></Link>
                         <Link href="https://twitter.com" target="_blank"><BsTwitter className="w-5 h-5 hover:text-blue-700 dark:hover:text-white"/> </Link>

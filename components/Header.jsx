@@ -19,7 +19,7 @@ export default function Header(){
     
     return(<>
     
-        <Navbar fluid={true} rounded={false} className="relative dark:bg-bckblue">
+        <Navbar fluid={true} rounded={false} className="relative border-b  dark:bg-bckblue dark:border-cyan-700">
             <div className="md:hidden hover:text-blue-700 dark:text-slate dark:hover:text-white">
                 <Navbar.Toggle />
             </div>

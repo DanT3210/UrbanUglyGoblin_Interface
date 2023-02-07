@@ -2,13 +2,8 @@ import Image from 'next/image'
 //import styles from '../../styles/Home.module.css'
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 import { useState } from 'react';
+import { DarkThemeToggle } from "flowbite-react";
 
-
-
-
-const my_styles = {
-  container: `h-full w-[300px] flex flex-col bg-[#fff] static`,
-}
 
 export default function Store() {
   const [accounts, setAccounts]=useState([]); 
@@ -16,7 +11,7 @@ export default function Store() {
   
   return (<>
 
-    <div className="h-90v md:flex justify-center items-center">
+    <div className="h-90v md:flex justify-center items-center dark:bg-bckblue dark:text-slate">
     Item(s)
     </div>
 

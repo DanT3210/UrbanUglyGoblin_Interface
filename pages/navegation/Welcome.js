@@ -67,11 +67,18 @@ export default function Welcome(){
     return(<>
             <div className="h-50v md:flex justify-center items-center">
                 
-                <div className="top-40 bg-blue-500 border-solid border-2 border-zinc-900 rounded-md dark:text-slate dark:border-slate dark:bg-neutral-700">
+                <div className="bg-blue-500 border-solid border-2 border-zinc-900 rounded-md dark:text-slate dark:border-slate dark:bg-neutral-700">
                     <div className="mx-20 pt-4 pb-4">
                         <p className="text-6xl font-thin">WELCOM TO <b>SALES-UP!</b></p>
                         <p className="text-2xl font-black">Where Digital & Physical Assets converge in the same place.</p>
-                        <p className="pt-10">Connect, Search, and Buy your favorit Item (Digital+Physical) in a decentralized trading protocol.</p>
+                        <p className="pt-10">Sales-Up is a decentralized trading protocol that allows users to buy and sell digital and physical assets in a secure and transparent manner.</p>
+                        <p>The platform is powered by blockchain technology and provides users with a secure and reliable way to trade digital and physical assets.</p>
+                        <p className="pt-10 text-lg font-bold">Sales-Up provides users with a wide range of features, including:</p>
+                        * Secure and transparent transactions<br></br>
+                        * Low transaction fees (2%)<br></br>
+                        * Ability to buy and sell digital and physical assets<br></br>
+                        * Ability to track and monitor transactions<br></br>
+                        * Access to a global marketplace
                         <div className="visible flex justify-center items-center mr-0 pt-8 pb-4 lg:hidden "><ConnectButton/></div>
                     </div>
                 </div>
