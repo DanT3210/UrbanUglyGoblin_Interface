@@ -10,9 +10,9 @@ export default function Store() {
   return (<>
 
     <div className="h-90v md:flex justify-center items-center dark:bg-bckblue dark:text-slate">
-      ITEMS
+      
       {isWeb3Enabled ? ( 
-        ("")
+        ("ITEMS")
         ) : <ConnectButton/>} 
     </div>
 
