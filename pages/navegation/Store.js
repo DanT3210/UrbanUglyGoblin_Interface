@@ -12,7 +12,8 @@ export default function Store() {
     <div className="h-90v md:flex justify-center items-center dark:bg-bckblue dark:text-slate">
       
       {isWeb3Enabled ? ( 
-        ("ITEMS")
+        <div>"ITEMS"</div>
+        
         ) : <ConnectButton/>} 
     </div>
 
