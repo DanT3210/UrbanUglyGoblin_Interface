@@ -4,9 +4,7 @@ import styles from '../styles/Home.module.css'
 import { useMoralis, useWeb3Contract } from 'react-moralis';
 import { useState } from 'react';
 import { DarkThemeToggle } from "flowbite-react";
-//import Header from '../components/Header';
 import Welcome from './navegation/Welcome';
-//import MyFooter from '../components/MyFooter';
 
 export default function Home() {
   const [accounts, setAccounts]=useState([]); 

@@ -83,5 +83,10 @@ export default function Welcome(){
                     </div>
                 </div>
             </div> 
+            <div className="md:flex justify-center items-center">
+                {isWeb3Enabled ? ( 
+                    ("")
+                    ) : <ConnectButton/>} 
+            </div>
     </>)
 }
